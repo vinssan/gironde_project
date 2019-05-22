@@ -1,0 +1,216 @@
+
+
+
+
+body{
+	background-color: #D3D3D3-40;
+}
+
+h1{
+	text-align: center;
+	padding: 20px;
+    background: #F8F8F8;
+    border: 10px solid black;
+    border-radius: 10px;
+}
+
+
+p{
+	font-family: Garamond ;
+	font-style: normal;
+	font-size: 15px;
+	text-align: center;
+	font-weight: normal;
+}
+
+
+
+/* ---------------------------------------------- */
+			/* CONSIGNE ET EN TETE */
+/* ---------------------------------------------- */
+
+.warning{
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline ;
+	color: red;
+}
+
+
+.h_descr{
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+.lot_descr{
+	font-size: 20px;
+	font-style: oblique;
+}
+
+
+
+/* ---------------------------------------------- */
+				/* TABLE */
+/* ---------------------------------------------- */
+
+table{
+	font-family: Garamond ;
+	font-style: normal;
+	font-size: 20px;
+	text-align: center;
+	margin : 0 auto ;
+}
+
+th{
+	width:400px;
+}
+
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+
+.tg td{font-family:Arial, sans-serif;font-size:14px;
+		padding:10px 5px;
+		border-style:solid;
+		border-width:0px;
+		overflow:hidden;
+		word-break:normal;}
+
+.tg th{font-family:Arial, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		padding:10px 5px;
+		border-style:solid;
+		border-width:0px;
+		overflow:hidden;
+		word-break:normal;}
+
+.tg .tg-head{font-weight:bold;
+		border-right-width:10px;
+		border-left-width:10px;
+		border-bottom-width:0px;
+		border-bottom-style: dashed;
+		border-top-width:10px;
+		font-size:30px;
+		font-family:"Times New Roman", Times, serif !important;
+		background-color:#c0c0c0;
+		border-color:black;
+		text-align:center}
+
+.tg .tg-descr{font-family:"Times New Roman", Times, serif !important;
+		border-right-width:10px;
+		border-left-width:10px;	
+		border-color:black;
+		text-align:center;
+		vertical-align:top}
+
+.tg .tg-pie{font-size:16px;font-family:"Times New Roman", Times, serif !important;
+		border-right-width:10px;
+		border-left-width:10px;
+		border-bottom-width:0px;
+		border-bottom-style: dashed;
+		border-color:black;
+		text-align:center}
+
+.tg .tg-choose{font-family:"Times New Roman", Times, serif !important;
+		border-right-width:10px;
+		border-left-width:10px;
+		border-bottom-width:10px;
+		background-color:#c0c0c0;
+		border-color:black;
+		text-align:center;
+		vertical-align:top}
+
+	
+
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+									/* BUTTONS */
+/* ------------------------------------------------------------------------------------ */
+
+
+
+/* ---------------------------------------------- */
+		/* BUTTON STAGE 1 TO CHOOSE LOTTERY */
+/* ---------------------------------------------- */
+
+
+
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none; 
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+
+.form-radio:hover
+{
+     background-color: gray;
+}
+
+.form-radio:checked
+{
+     background-color: #90EE90;
+
+}
+
+label
+{
+     font: 15px/1.7 'Open Sans', sans-serif;
+     color: #333;
+     cursor: pointer;
+     font-weight: bold;
+
+} 
+
+
+
+
+/* ---------------------------------------------- */
+	/* BUTTON STAGE 1 TO CONFIRM AND GO NEXT */
+/* ---------------------------------------------- */
+  
+
+.subnext {
+   display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #538fbe;
+    padding: 20px 70px;
+    font-size: 24px;
+    border: 1px solid #2d6898;
+    border-radius: 5px;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    cursor:pointer;
+}
+
+
+

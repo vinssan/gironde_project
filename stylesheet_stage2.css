@@ -1,0 +1,135 @@
+body{
+	background-color: #D3D3D3-40;
+}
+
+h1{
+	text-align: center;
+	padding: 20px;
+    background: #F8F8F8;
+    border: 10px solid black;
+    border-radius: 10px;
+}
+
+
+
+
+
+p{
+	font-family: Garamond ;
+	font-style: normal;
+	font-size: 15px;
+	text-align: center;
+	font-weight: normal;
+}
+
+
+.x1p1{
+	color:#4228C6; font-family:"Times New Roman", Times, serif !important;font-size:20px;
+}
+.x2p2{
+	color:#C6285D; font-family:"Times New Roman", Times, serif !important;font-size:20px;
+}
+.x3p3{
+	color:#ACC628; font-family:"Times New Roman", Times, serif !important;font-size:20px;
+}
+.x4p4{
+	color:#28C691; font-family:"Times New Roman", Times, serif !important;font-size:20px;
+}
+
+
+
+
+/* TABLEAU */
+
+
+table{
+	font-family: Garamond ;
+	font-style: normal;
+	font-size: 20px;
+	text-align: center;
+	margin : 0 auto ;
+
+}
+
+th{
+	width:400px;
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:"Times New Roman", Times, serif !important;font-size:20px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+.tg th{font-family:"Times New Roman", Times, serif !important;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+
+.tg .th_head{
+	border-right-width:10px;
+	border-left-width:10px;
+	border-bottom-width:10px;
+	border-top-width:10px;
+	font-size:20px;font-family:"Times New Roman", Times, serif !important;background-color:#c0c0c0;border-color:black;text-align:center;
+	font-weight: bold;
+}
+
+
+.tg .th_outcome{
+	border-right-width:10px;
+	border-left-width:10px;
+	border-bottom-width:0px;
+	border-top-width:10px;
+}
+
+.tg .th_prob{
+	border-right-width:10px;
+	border-left-width:10px;
+	border-bottom-width:10px;
+	
+}
+
+
+#lot
+{
+  margin: 0 auto;
+}
+
+
+
+
+/* REPONSE DE HIERARCHISATION */
+
+input[type=number], select {
+  width: 50%;
+  padding: 5px 10px;
+  margin: 1px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+
+
+
+/* ---------------------------------------------- */
+	/* BUTTON STAGE 1 TO CONFIRM AND GO NEXT */
+/* ---------------------------------------------- */
+  
+
+.subnext {
+   display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #538fbe;
+    padding: 5px 7px;
+    font-size: 15px;
+    border: 1px solid #2d6898;
+    border-radius: 5px;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
