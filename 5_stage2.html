@@ -1,73 +1,34 @@
 <!DOCTYPE html>
 <html>
-
-
-
-<!-- ----------------------------------------------------------------------------------- -->
-<!-- ::::::::::::::::::::::::::::::::HEAD::::::::::::::::::::::::::::::::::::::::::::::: -->
-<!-- ----------------------------------------------------------------------------------- -->
-
 <head>
 	<meta charset="utf-8">
 	<title> STAGE 2 </title>
+
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
   <link rel="stylesheet" type="text/css" href="stylesheet_stage2.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
 </head>
-
-<!-- ___________________________________________________________________________________ -->
-
-
-
-
-
-
-
-
 <body>
 
-<!-- ----------------------------------------------------------------------------------- -->
-<!-- ::::::::::::::::::::::::::::CONSIGNE ET EN-TETE:::::::::::::::::::::::::::::::::::: -->
-<!-- ----------------------------------------------------------------------------------- -->
-
 	<h1> 
-    - STAGE 2 - <br/> 
-    Rank the informations you consider <br/> 
-    to be most important (rank 1) to least important (rank 4)
+    - STAGE 2 - <br/> Rank the informations you consider <br/> to be most important (rank 1) to least important (rank 4)
   </h1>
 
- <form action="popup_instruction_stage2.html">
-    <center>
-      <input class="consigne" type="submit" name="validate" value="instruction stage 2"></p>
-    </center>
-  </form>
-
-  <!-- ___________________________________________________________________________________ -->
+  <p> Remember: This lottery has four possible outcomes. Each outcome is tied with a probability </p>
+  <p> blabla </p>
+  <p> blabla </p>
 
 
-
-
-
-
-<!-- ----------------------------------------------------------------------------------- -->
-<!-- ::::::::::::::::::::::::::::::::TABLE:::::::::::::::::::::::::::::::::::::::::::::: -->
-<!-- ----------------------------------------------------------------------------------- -->
-
-<p> With this lottery you can get : </p>
-      <p class="lot_descr"> 
-        either <strong> <FONT color='#4228C6'>a€ (the best outcome)         </FONT> </strong> with <strong> <FONT color='#4228C6'> 40% </FONT></strong> chance <br/> 
-        either <strong> <FONT color='#C6285D'>b€ (the second best outcome)  </FONT> </strong> with <strong> <FONT color='#C6285D'> 40% </FONT></strong> chance <br/> 
-        either <strong> <FONT color='#ACC628'>c€ (the third best outcome)   </FONT> </strong> with <strong> <FONT color='#ACC628'> 10% </FONT></strong> chance <br/> 
-        either <strong> <FONT color='#28C691'>d€ (the fourth best outcome)  </FONT> </strong> with <strong> <FONT color='#28C691'> 10% </FONT></strong> chance 
-      </p>
 
 <table class="tg">
 
   <tr>
     <th></th>
-    <th class="th_head"> BEST OUTCOME        </th>
+    <th class="th_head"> BEST OUTCOME </th>
     <th class="th_head"> SECOND BEST OUTCOME </th>
-    <th class="th_head"> THIRD BEST OUTCOME  </th>
+    <th class="th_head"> THIRD BEST OUTCOME </th>
     <th class="th_head"> FOURTH BEST OUTCOME </th>
   </tr>
 
@@ -103,7 +64,6 @@
   </tr>
 </table>
 
-<!-- ___________________________________________________________________________________ -->
 
 
 
@@ -113,58 +73,52 @@
 
 
 
-<!-- ----------------------------------------------------------------------------------- -->
-<!-- ::::::::::::::::::::::::::::::::PIE CHART:::::::::::::::::::::::::::::::::::::::::: -->
-<!-- ----------------------------------------------------------------------------------- -->
+
+
+
+
+
 
 <script type="text/javascript">
 
-  // LOTTERY A 
-  // ----------
+// LOTTERY A 
+// ----------
 
-  // Load google charts
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
 
-  // Draw the chart and set the chart values
-  function drawChart() 
-  {
-    var data_A = google.visualization.arrayToDataTable
-    ([
-      ['outcome', 'probability'],
+// Draw the chart and set the chart values
+function drawChart() {
+  var data_A = google.visualization.arrayToDataTable([
+  ['outcome', 'probability'],
 
-      ['a€', 0.4], // x1_A and p1_A
-      ['b€', 0.4], // x1_A and p1_A
-      ['c€', 0.1], // x1_A and p1_A
-      ['d€', 0.1]  // x2_A and p2_A
-    ]);
+  ['a€', 0.4], // x1_A and p1_A
+  ['b€', 0.4], // x1_A and p1_A
+  ['c€', 0.1], // x1_A and p1_A
+  ['d€', 0.1]  // x2_A and p2_A
+]);
 
   // Optional; add a title and set the width and height of the chart
-    var options = 
-    {
-      colors: ['#4228C6', '#C6285D', '#ACC628' , '#28C691'], 
-      chartArea:
-      {
-        left:    "3%",
-        top:     "3%",
-        height:  "94%",
-        width:   "94%"
-      },
-      fontSize: 20,
-      tooltip: {textStyle:  {fontName: 'TimesNewRoman',fontSize: 20}},
-      legend: {textStyle: {fontSize: 15}},
-      is3D: false,
-    }   //var options = {'title':'Lottery A', 'width':550, 'height':400};
+ var options = {colors: ['#4228C6', '#C6285D', '#ACC628' , '#28C691'], chartArea: {
+        left: "3%",
+        top: "3%",
+        height: "94%",
+        width: "94%"
+    },
+    fontSize: 20,
+    tooltip: {textStyle:  {fontName: 'TimesNewRoman',fontSize: 20}},
+    legend: {textStyle: {fontSize: 15}},
+    is3D: false,
+    }//var options = {'title':'Lottery A', 'width':550, 'height':400};
 
 
   // Display the chart inside the <div> element with id="piechart"
-    var chart_A = new google.visualization.PieChart(document.getElementById('lot'));
-    chart_A.draw(data_A, options);
+  var chart_A = new google.visualization.PieChart(document.getElementById('lot'));
+  chart_A.draw(data_A, options);
 };
 
 </script>
-
-<!-- ___________________________________________________________________________________ -->
 
 </body>
 </html>

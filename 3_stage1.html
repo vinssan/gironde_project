@@ -1,62 +1,36 @@
 <!DOCTYPE html>
 <html>
-
-
-
-<!-- ----------------------------------------------------------------------------------- -->
-<!-- ::::::::::::::::::::::::::::::::HEAD::::::::::::::::::::::::::::::::::::::::::::::: -->
-<!-- ----------------------------------------------------------------------------------- -->
-
 <head>
+
 	<meta charset="utf-8">
 	<title> STAGE 1 </title>
+
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<link rel="stylesheet" type="text/css" href="stylesheet_stage1_3.css">
+
+	<link rel="stylesheet" type="text/css" href="stylesheet_stage1.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
 </head>
-
-<!-- ___________________________________________________________________________________ -->
-
-
-
-
-
-
-
-
 <body>
 
-<!-- ----------------------------------------------------------------------------------- -->
-<!-- ::::::::::::::::::::::::::::CONSIGNE ET EN-TETE:::::::::::::::::::::::::::::::::::: -->
-<!-- ----------------------------------------------------------------------------------- -->
-
 	<h1> 
-    - STAGE 1 - <br/>
-    CHOOSE THE LOTTERY YOU PREFER
+    - STAGE 1 - <br/>CHOOSE THE LOTTERY YOU PREFER
   </h1>
 
-  <form action="popup_instruction_stage1.html">
-    <center>
-      <input class="consigne" type="submit" name="validate" value="instruction stage 1"></p>
-    </center>
-  </form>
-
+	<p> 
+    To choose the "lottery A" click on the button <strong> "choose lottery A" </strong><br/>
+    To choose the "lottery B" click on the button <strong> "choose lottery B" </strong>
+  </p>
+  
+  <p> 
+    Once you have chosen your favourite lottery, confirm your choice by clicking on the <strong>"confirm and go to the next choice" </strong>button. <br/> This button will redirect you to a new choice situation </p>
 
   <p class="warning">  
-    Each time you face to a new choice situation <br/> 
-    take a moment to carrefully read what each lottery can offer you 
+    Each time you face to a new choice situation <br/> take a moment to carrefully read what each lottery can offer you 
   </p>
 
-<br/>
+  <br/>
 
-<!-- ___________________________________________________________________________________ -->
-
-
-
-
-<!-- ----------------------------------------------------------------------------------- -->
-<!-- ::::::::::::::::::::::::::::::::TABLE:::::::::::::::::::::::::::::::::::::::::::::: -->
-<!-- ----------------------------------------------------------------------------------- -->
 
 <table class="tg">
 
@@ -68,24 +42,18 @@
   <tr>
     <td class="tg-descr"> 
       <p class="h_descr"> By choosing lottery A you can get : </p>
-         <p class="lot_descr"> 
-           either <strong> <FONT color='#0000FF'>100€ </FONT> </strong> with <strong> <FONT color='#0000FF'> 20% </FONT></strong> chance <br/> 
-           either <strong> <FONT color='#D2691E'>5€   </FONT> </strong> with <strong> <FONT color='#D2691E'> 80% </FONT></strong> chance 
-         </p> 
+      <p class="lot_descr"> either <strong> <FONT color="blue">100€ </FONT> </strong> with <strong> <FONT color="blue"> 20% </FONT></strong> chance <br/> either <strong> <FONT color="orange">5€ </FONT> </strong> with <strong> <FONT color="orange"> 80% </FONT></strong> chance </p> 
     </td>
 
     <td class="tg-descr"> 
       <p class="h_descr"> By choosing lottery B you can get : </p>
-        <p class="lot_descr"> 
-          either <strong> <FONT color='#0000FF'>70€ </FONT> </strong> with <strong> <FONT color='#0000FF'> 50% </FONT></strong> chance <br/> 
-          either <strong> <FONT color='#D2691E'>30€ </FONT> </strong> with <strong> <FONT color='#D2691E'> 50% </FONT></strong> chance 
-        </p> 
+      <p class="lot_descr"> either <strong> <FONT color="blue">70€ </FONT> </strong> with <strong> <FONT color="blue"> 50% </FONT></strong> chance <br/> either <strong> <FONT color="orange">30€ </FONT> </strong> with <strong> <FONT color="orange"> 50% </FONT></strong> chance </p> 
       </td>
   </tr>
 
   <tr>
-    <td class="tg-pie"> <div id="lot_A"> </div> </td>
-    <td class="tg-pie"> <div id="lot_B"> </div> </td>
+    <td class="tg-pie"><div id="lot_A"> </div></td>
+    <td class="tg-pie"><div id="lot_B"> </div></td>
   </tr>
 
   <tr>
@@ -101,10 +69,7 @@
 </table>
 
 
-	<p> <input class="subnext" type="submit" name="validate" value="CONFIRM AND GO TO THE NEXT CHOICE"> </p>
-
-
-<!-- ___________________________________________________________________________________ -->
+	<p> <input class="subnext" type="submit" name="validate" value="CONFIRM AND GO TO THE NEXT CHOICE"></p>
 
 
 
@@ -118,90 +83,80 @@
 
 
 
-<!-- ----------------------------------------------------------------------------------- -->
-<!-- ::::::::::::::::::::::::::::::::PIE CHART:::::::::::::::::::::::::::::::::::::::::: -->
-<!-- ----------------------------------------------------------------------------------- -->
 
 
 <script type="text/javascript">
 
-  // LOTTERY A 
-  // ----------
+// LOTTERY A 
+// ----------
 
-  // Load google charts
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
 
-  // Draw the chart and set the chart values
-  function drawChart() 
-  {
-    var data_A = google.visualization.arrayToDataTable
-    ([
-      ['outcome', 'probability'],
-      ['100€', 0.2], // x1_A and p1_A
-      ['5€', 1-0.2]  // x2_A and p2_A
-    ]);
+// Draw the chart and set the chart values
+function drawChart() {
+  var data_A = google.visualization.arrayToDataTable([
+  ['outcome', 'probability'],
+
+  ['100€', 0.2], // x1_A and p1_A
+  ['5€', 1-0.2]  // x2_A and p2_A
+]);
 
   // Optional; add a title and set the width and height of the chart
-    var options = 
-    {
-      colors: ['#0000FF', '#D2691E'], 
-      chartArea:
-      {
-        left:    "3%",
-        top:     "3%",
-        height:  "94%",
-        width:   "94%"
-      },
-      fontSize: 20,
-      tooltip: {textStyle:  {fontName: 'TimesNewRoman',fontSize: 20}},
-      legend: {textStyle: {fontSize: 15}},
-      is3D: false,
-    }     //var options = {'title':'Lottery A', 'width':550, 'height':400};
+ var options = {colors: ['#0000FF', '#D2691E'], chartArea: {
+        left: "3%",
+        top: "3%",
+        height: "94%",
+        width: "94%"
+    },
+    fontSize: 20,
+    tooltip: {textStyle:  {fontName: 'TimesNewRoman',fontSize: 20}},
+    legend: {textStyle: {fontSize: 15}},
+    is3D: false,
+    }//var options = {'title':'Lottery A', 'width':550, 'height':400};
 
 
   // Display the chart inside the <div> element with id="piechart"
-    var chart_A = new google.visualization.PieChart(document.getElementById('lot_A'));
-    chart_A.draw(data_A, options);
+  var chart_A = new google.visualization.PieChart(document.getElementById('lot_A'));
+  chart_A.draw(data_A, options);
 
 
 
 
-  // LOTTERY B 
-  // ----------
+// LOTTERY B 
+// ----------
 
-    var data_B = google.visualization.arrayToDataTable
-    ([
-      ['outcome', 'probability'],
-      ['70€', 0.5 ],   // x1_B and p1_B
-      ['30€', 1-0.5]   // x2_B and p2_B
-    ]);
+  var data_B = google.visualization.arrayToDataTable([
+  ['outcome', 'probability'],
+
+  ['70€', 0.5 ],   // x1_B and p1_B
+  ['30€', 1-0.5]   // x2_B and p2_B
+]);
 
   // Optional; add a title and set the width and height of the chart
-    var options = {
-      colors: ['#0000FF', '#D2691E'], 
-      chartArea:
-      {
-        left:    "3%",
-        top:     "3%",
-        height:  "94%",
-        width:   "94%"
-      },
-      fontSize: 20,
-      tooltip: {textStyle:  {fontName: 'TimesNewRoman',fontSize: 20}},
-      legend: {textStyle: {fontSize: 15}},
-      is3D: false,
-    }    //var options = {'title':'Lottery A', 'width':550, 'height':400};
+ var options = {colors: ['#0000FF', '#D2691E'], chartArea: {
+        left: "3%",
+        top: "3%",
+        height: "94%",
+        width: "94%"
+    },
+    fontSize: 20,
+    tooltip: {textStyle:  {fontName: 'TimesNewRoman',fontSize: 20}},
+    legend: {textStyle: {fontSize: 15}},
+    is3D: false,
+    }//var options = {'title':'Lottery A', 'width':550, 'height':400};
 
   // Display the chart inside the <div> element with id="piechart"
-    var chart_B = new google.visualization.PieChart(document.getElementById('lot_B'));
-    chart_B.draw(data_B, options);
-
+  var chart_B = new google.visualization.PieChart(document.getElementById('lot_B'));
+  chart_B.draw(data_B, options);
 };
+
+
+
 
 </script>
 
-<!-- ___________________________________________________________________________________ -->
 
 
 </body>
