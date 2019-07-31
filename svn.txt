@@ -1,6 +1,6 @@
 Dans le terminal
 
-cd Desktop/gironde   [change directory] change le repertoire currant 
+cd ~/Desktop/gironde [change directory] change le repertoire currant 
 
 svn up               [update] telecharge des changement du serveur
 svn ci -m "..."      [commit] envoye tes changements au serveur
