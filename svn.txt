@@ -1,0 +1,5 @@
+svn up[date] -- telecharge des changement du serveur
+svn c[omm]i[t] -m "..." -- envoye tes changements au serveur
+svn add file_name -- ajoute un nouveau fichier à la contrôle de version 
+svn st[atus] -- verifie s'il y a des fichiers modifiées à envoyer 
+
