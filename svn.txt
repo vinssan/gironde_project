@@ -1,11 +1,12 @@
 Dans le terminal
 
-cd Desktop/gironde         change le repertoire currant 
+cd Desktop/gironde   [change directory] change le repertoire currant 
 
-svn up[date]               telecharge des changement du serveur
-svn c[omm]i[t] -m "..."    envoye tes changements au serveur
-svn add file_name          ajoute un nouveau fichier à svn  
-svn st[atus]               verifie s'il y a des fichiers modifiées à envoyer 
+svn up               [update] telecharge des changement du serveur
+svn ci -m "..."      [commit] envoye tes changements au serveur
+svn add file_name             ajoute un nouveau fichier à svn  
+svn st               [status] verifie s'il y a des fichiers modifiées à envoyer 
 
-svn m[o]v[e] old new       change le nom de ficher
-svn c[o]p[y] file clone    fait une copie d'un fichier  
+svn mv old new       [move]   change le nom de ficher
+svn cp file clone    [copy]   fait une copie d'un fichier  
+svn rm file          [remove] supprime un fichier
