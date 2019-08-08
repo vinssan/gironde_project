@@ -19,3 +19,5 @@ cat file_name        affiche le contenu du fichier
 CTRL+D               fin de fichier/arete&ferme un processus 
 CTRL+C               interompre (arete une operation en cours)
 
+https://validator.w3.org/check    pour valider des fichers HTML (ATTN: choisir XHTML 1.0 Strict)
+http://jigsaw.w3.org/css-validator/validator   pour valider des fichiers CSS 3
