@@ -1,6 +1,6 @@
 Dans le terminal
 
-cd ~/Desktop/gironde [change directory] change le repertoire currant 
+cd ~/Sites/gironde   [change directory] change le repertoire currant 
 
 svn up               [update] telecharge des changement du serveur
 svn ci -m "..."      [commit] envoye tes changements au serveur
@@ -10,3 +10,6 @@ svn st               [status] verifie s'il y a des fichiers modifiées à envoye
 svn mv old new       [move]   change le nom de ficher
 svn cp file clone    [copy]   fait une copie d'un fichier  
 svn rm file          [remove] supprime un fichier
+
+
+./config.sh          lance le script de configuration
