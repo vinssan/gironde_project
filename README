@@ -15,3 +15,7 @@ svn rm file          [remove] supprime un fichier
 ./config.sh          lance le script de configuration
 
 cat file_name        affiche le contenu du fichier
+
+CTRL+D               fin de fichier/arete&ferme un processus 
+CTRL+C               interompre (arete une operation en cours)
+
