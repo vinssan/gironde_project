@@ -13,3 +13,5 @@ svn rm file          [remove] supprime un fichier
 
 
 ./config.sh          lance le script de configuration
+
+cat file_name        affiche le contenu du fichier
