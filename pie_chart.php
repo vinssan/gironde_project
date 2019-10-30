@@ -27,7 +27,7 @@
       echo "x='",sin(2*M_PI*($sum+$p/2)/100)*12.5,"' ";
       echo "y='",-cos(2*M_PI*($sum+$p/2)/100)*12.5,"'>";
       echo $p,"%";
-      echo "</text>";
+      echo "</text>\n";
 
       $sum = $sum + $p;
    }
