@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- ::::::::::::::::::::::::::::::::HEAD::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------------------------------------------------------------------- -->
+<head>
+	<meta charset="utf-8">
+	<title> Pie chart </title>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet_stage1.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+</head>
+
+<!-- ___________________________________________________________________________________ -->
+
+
+
+
+
+
+<body>
+
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- ::::::::::::::::::::::::::::CONSIGNE ET EN-TETE:::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------------------------------------------------------------------- -->
+
+<!-- <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut"> -->
+<!--   <\!-- <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle> -\-> -->
+<!--   <\!-- <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle> -\-> -->
+
+<!--   <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="1" stroke-dasharray="75 25" stroke-dashoffset="15"></circle> -->
+<!-- </svg> -->
+
+<svg height="120px" width="120px" viewBox="-10 -10 40 40">
+  <circle r="10" cx="10" cy="10" fill="white" />
+  <circle r="5" cx="10" cy="10" fill="transparent"
+          stroke="purple"
+          stroke-width="10"
+          stroke-dasharray="calc(20 * 31.4159265359 / 100) 31.4"
+          transform="rotate(-90 10 10)" />
+  <!-- stroke-dasharray="15%*d d" where d = 2*pi*r r=5-->
+  <!-- transform rotate(-90+360*sum/100 cx cy) cy=10 cy=10-->
+  <circle r="5" cx="10" cy="10" fill="transparent"
+          stroke="green"
+          stroke-width="10"
+          stroke-dasharray="calc(25 * 31.4159265359 / 100) 31.4"
+          transform="rotate(-18 10 10) " />
+  <circle r="5" cx="10" cy="10" fill="transparent"
+          stroke="blue"
+          stroke-width="10"
+          stroke-dasharray="calc(15 * 31.4159265359 / 100) 31.4"
+          transform="rotate(72 10 10) " />
+  <circle r="5" cx="10" cy="10" fill="transparent"
+          stroke="black"
+          stroke-width="10"
+          stroke-dasharray="calc(39.22 * 31.4159265359 / 100) 31.4"
+          transform="rotate(126 10 10) " />
+  <!-- alpha = pi * (sum of previous percents + 1/2 this percent)/100
+       x = cx + sin(alpha) * r
+       y = cy - cos(alpha) * r
+       where cx = 10, cy = 10, and r = 10* (1 + offset) where offset = 0.1
+    -->
+  <text x="16.4656377752" y="1.1008130619" style="font: 2px sans-serif;">20%</text>
+  <text x="19.8010717661" y="14.9938954971" style="font: 2px sans-serif;">25%</text>
+</svg>
+</body>
+</html>

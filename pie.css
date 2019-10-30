@@ -1,0 +1,18 @@
+.pie0 {
+    stroke:#9F9;
+}
+.pie1 {
+    stroke:#3B4;
+}
+.pie2 {
+    stroke:#173;
+}
+.pie3 {
+    stroke:#142;
+}
+
+.pielab {
+    color:red;
+    font: 2px sans-serif;
+    text-anchor: middle;
+}
