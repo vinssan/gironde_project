@@ -1,18 +1,130 @@
-.pie0 {
+.piegreen .color0 {
     stroke:#7E9;
 }
-.pie1 {
+.piegreen .color1 {
     stroke:#3B4;
 }
-.pie2 {
+.piegreen .color2 {
     stroke:#173;
 }
-.pie3 {
+.piegreen .color3 {
     stroke:#042;
 }
 
+
+/*https://colorpalettes.net/color-palette-3920/*/
+
+.piegreen1 .color0 {
+    stroke:#cbc085;
+}
+.piegreen1 .color1 {
+    stroke:#6c7904;
+}
+.piegreen1 .color2 {
+    stroke:#1d3110;
+}
+.piegreen1 .color3 {
+    stroke:#001205;
+}
+
+/* https://colorpalettes.net/color-palette-3119/ */
+
+.piegreen2 .color0 {
+    stroke:#e5e2b0
+;
+}
+.piegreen2 .color1 {
+    stroke:#b1cc7e
+;
+}
+.piegreen2 .color2 {
+    stroke:#6b8551
+;
+}
+.piegreen2 .color3 {
+    stroke:#202816
+;
+}
+
+
+
+.piegreen3 .color0 {
+    stroke:#f3f5e1
+
+;
+}
+.piegreen3 .color1 {
+    stroke:#ced248
+;
+}
+.piegreen3 .color2 {
+    stroke:#9f9c07
+;
+}
+.piegreen3 .color3 {
+    stroke:#479600
+;
+}
+
+
+.piergby .color0 {
+    stroke:red;
+}
+.piergby .color1 {
+    stroke:yellow;
+}
+.piergby .color2 {
+    stroke:green;
+}
+.piergby .color3 {
+    stroke:blue;
+}
+
+.piecompl .color0 {
+    stroke:#f28500
+;
+}
+.piecompl .color1 {
+    stroke:#ffca00
+;
+}
+.piecompl .color2 {
+    stroke:#648e00
+;
+}
+.piecompl .color3 {
+    stroke:#005100
+;
+}
+
+.piecompl1 .color0 {
+    stroke:#E5DF10
+;
+}
+.piecompl1 .color1 {
+    stroke:#0B9E5B
+;
+}
+.piecompl1 .color2 {
+    stroke:#E54A10
+;
+}
+.piecompl1 .color3 {
+    stroke:#62149A
+;
+}
+
+
+.piebw .color0 {
+    stroke:#000;
+}
+.piebw .color1 {
+    stroke:#999;
+}
+
+
 .pielab {
     color:red;
-    font: 2px sans-serif;
+    font: 2.5px sans-serif;
     text-anchor: middle;
 }

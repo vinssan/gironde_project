@@ -9,29 +9,63 @@
 
 
 <?php
-   $values = array(15,25,40,20);
-   $sum = 0;
+      include 'gironde_pie.php';
+$z = 50;
+$values = array($z,100-$z);
+$values = array(45,15,30,10);
 ?>
 
 <body>
 
-<svg height="300px" width="300px" viewBox="-20 -20 40 40">
-<circle r="10" cx="10" cy="10" fill="white" />
 <?php
-   foreach ($values as $i => $p) {
-      echo "<circle class='pie$i' r='5' cx='0' cy='0' fill='transparent' ";
-      echo "stroke-width='10' ";
-      echo "stroke-dasharray='", $p*2*M_PI*5/100, " ", 2*M_PI*5, "' ";
-      echo "transform='rotate(",-90+360*$sum/100," 0 0)'/>\n";
-      echo "<text class='pielab' ";
-      echo "x='",sin(2*M_PI*($sum+$p/2)/100)*12.5,"' ";
-      echo "y='",-cos(2*M_PI*($sum+$p/2)/100)*12.5,"'>";
-      echo $p,"%";
-      echo "</text>\n";
-
-      $sum = $sum + $p;
-   }
+for ($i = 0; $i < 10; $i++) {
+    $values = array(10+2*$i,5+3*$i,15+1.5*$i,70-6.5*$i);
+    gironde_pie($values,'piegreen');
+}
 ?>
-</svg>
+<br/>
+
+<?php
+    for ($j = 1; $j < 4; $j++) {
+    for ($i = 0; $i < 10; $i++) {
+        $values = array(10+2*$i,5+3*$i,15+1.5*$i,70-6.5*$i);
+        gironde_pie($values,'piegreen'.$j);
+    }
+    echo "<br/>";
+}
+?>
+<br/>
+
+<?php
+for ($i = 0; $i < 10; $i++) {
+    $values = array(10+2*$i,5+3*$i,15+1.5*$i,70-6.5*$i);
+    gironde_pie($values,'piergby');
+}
+?>
+<br/>
+
+<?php
+for ($i = 0; $i < 10; $i++) {
+    $values = array(10+2*$i,5+3*$i,15+1.5*$i,70-6.5*$i);
+    gironde_pie($values,'piecompl');
+}
+?>
+<br/>
+
+<?php
+for ($i = 0; $i < 10; $i++) {
+    $values = array(10+2*$i,5+3*$i,15+1.5*$i,70-6.5*$i);
+    gironde_pie($values,'piecompl1');
+}
+?>
+<br/>
+
+<?php
+for ($i = 0; $i < 10; $i++) {
+    $values = array(10+7*$i,90-7*$i);
+    gironde_pie($values,'piebw');
+}
+?>
+
 </body>
 </html>
