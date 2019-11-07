@@ -7,6 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="pie.css">
 </head>
 
+<?php
+?>
+
 
 <?php
       include 'gironde_pie.php';
@@ -18,6 +21,8 @@ $values = array(45,15,30,10);
 <body>
 
 <?php
+echo gironde_detect_browser();
+
 for ($i = 0; $i < 10; $i++) {
     $values = array(10+2*$i,5+3*$i,15+1.5*$i,70-6.5*$i);
     gironde_pie($values,'piegreen');
